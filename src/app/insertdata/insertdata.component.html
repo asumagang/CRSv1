@@ -1,0 +1,24 @@
+<div class="container-fluid mt-2 ">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        [routerLink]="'viewdata'"
+        routerLinkActive="active"
+        >View Data</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="'representatives'"
+        routerLinkActive="active"
+        >Representatives</a
+      >
+    </li>
+  </ul>
+</div>
+<div class="container mt-3 ">
+  <router-outlet></router-outlet>
+</div>
+

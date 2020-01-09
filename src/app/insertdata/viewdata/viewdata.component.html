@@ -1,0 +1,309 @@
+<div class="container-flex ">
+  <!-- Large modal -->
+  <form class="formdesign">
+    <div class="form-row">
+      <div class="form-group col-md-3">
+        <button
+          type="button"
+          class="btn btn-dark btn-sm"
+          data-toggle="modal"
+          data-target=".bd-example-modal-lg"
+        >
+          Insert Data
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-dark btn-sm ml-3"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
+          Import File
+        </button>
+      </div>
+      <div class="form-group col-md-9">
+        <input
+          class="form-control form-control-sm"
+          type="text"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </div>
+    </div>
+    <div class="form-row mar">
+      <div class="form-group col-md-4">
+        <select id="inputState" class="form-control form-control-sm">
+          <option>Programs</option>
+          <option>All</option>
+          <option>Pantawid Pamilya</option>
+        </select>
+      </div>
+      <div class="form-group col-md-4">
+        <select id="inputState" class="form-control form-control-sm">
+          <option>Province</option>
+          <option>Cebu</option>
+          <option>Bohol</option>
+          <option>Siquijor</option>
+        </select>
+      </div>
+      <div class="form-group col-md-4">
+        <select id="inputState" class="form-control form-control-sm">
+          <option>Districts</option>
+          <option>District 1</option>
+          <option>District 2</option>
+        </select>
+      </div>
+    </div>
+  </form>
+
+  <div
+    class="modal fade bd-example-modal-lg"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myLargeModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Insert Data</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group ">
+              <label class="label-sm">Program</label>
+              <select id="inputState" class="form-control form-control-sm mar">
+                <option>Pantawid Pamilya</option>
+                <option>Lingap sa Masa</option>
+                <option>AICS</option>
+                <option>Kalahi</option>
+              </select>
+            </div>
+            <div class="form-row mar">
+              <div class="form-group col-md-6 mar">
+                <label class="label-sm" for="inputEmail4">Province</label>
+                <select
+                  id="inputState"
+                  class="form-control form-control-sm mar"
+                >
+                  <option>Cebu</option>
+                  <option>Siquijor</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6 mar">
+                <label class="label-sm">Municipality</label>
+                <select
+                  id="inputState"
+                  class="form-control form-control-sm mar"
+                >
+                  <option>Minglanilla</option>
+                  <option>Siquijor</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row mar">
+              <div class="form-group col-md-6 mar">
+                <label class="label-sm">Number of Beneficiaries</label>
+                <input class="form-control form-control-sm mar" />
+              </div>
+              <div class="form-group col-md-6 mar">
+                <label class="label-sm">Amount Disbursed</label>
+                <input class="form-control form-control-sm mar" />
+              </div>
+            </div>
+            <hr />
+            <div class="form-row mar">
+              <div class="form-group col-md-6 mar">
+                <label class="label-sm">Types of Assistance</label>
+                <select class="form-control form-control-sm mar" disabled>
+                  <option>Food</option>
+                  <option>Clothing</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row mar">
+              <div class="form-group col-md-6 mar">
+                <label class="label-sm">Number of Beneficiaries</label>
+                <input class="form-control form-control-sm mar" disabled />
+              </div>
+              <div class="form-group col-md-3 mar">
+                <label class="label-sm">Walked-in</label>
+                <input class="form-control form-control-sm mar" disabled />
+              </div>
+              <div class="form-group col-md-3 mar">
+                <label class="label-sm">Amount</label>
+                <input class="form-control form-control-sm mar" disabled />
+              </div>
+            </div>
+            <div class="form-row mar">
+              <div class="form-group col-md-6 mar"></div>
+              <div class="form-group col-md-3 mar">
+                <label class="label-sm">Referral</label>
+                <input class="form-control form-control-sm mar" disabled />
+              </div>
+              <div class="form-group col-md-3 mar">
+                <label class="label-sm">Amount</label>
+                <input class="form-control form-control-sm mar" disabled />
+              </div>
+            </div>
+
+            <div class="form-row mar">
+              <div class="form-group col-md-6 mar">
+                <label class="label-sm">Amount Disbursed</label>
+                <input class="form-control form-control-sm mar" disabled />
+              </div>
+              <div class="form-group col-md-3 mar">
+                <label class="label-sm">Walked-in</label>
+                <input class="form-control form-control-sm mar" disabled />
+              </div>
+              <div class="form-group col-md-3 mar">
+                <label class="label-sm">Amount</label>
+                <input class="form-control form-control-sm mar" disabled />
+              </div>
+            </div>
+            <div class="form-row mar">
+              <div class="form-group col-md-6 mar"></div>
+              <div class="form-group col-md-3 mar">
+                <label class="label-sm">Referral</label>
+                <input class="form-control form-control-sm mar" disabled />
+              </div>
+              <div class="form-group col-md-3 mar">
+                <label class="label-sm">Amount</label>
+                <input class="form-control form-control-sm mar" disabled />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModalCenter"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">
+            Upload CSV file
+          </h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Upload</span>
+            </div>
+            <div class="custom-file">
+              <input
+                type="file"
+                class="custom-file-input"
+                id="inputGroupFile01"
+              />
+              <label class="custom-file-label" for="inputGroupFile01"
+                >Choose file</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="table table-hover table-sm mar mt-2">
+    <thead>
+      <tr>
+        <th>District</th>
+        <th>Municility</th>
+        <th>Number of Beneficiaries</th>
+        <th>Amount Disbursed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1st District</td>
+        <td>Minglanilla</td>
+        <td>12000233</td>
+        <td>182929285</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>1st District</td>
+        <td>Minglanilla</td>
+        <td>12000233</td>
+        <td>18000100</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>1st District</td>
+        <td>Minglanilla</td>
+        <td>12000233</td>
+        <td>13567899</td>
+        <td></td>
+      </tr> 
+    </tbody>
+  </table>
+  <div class="container-flex bot">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label class=" col-form-label-sm" for="inputEmail4"
+            >Provincial Total No. of Beneficiaries</label
+          >
+          <input class="form-control form-control-sm mar" />
+        </div>
+        <div class="form-group col-md-3">
+          <label class=" col-form-label-sm"
+            >Provincial Total Amount Disbursed</label
+          >
+          <input class="form-control form-control-sm mar" />
+        </div>
+        <div class="form-group col-md-3">
+          <label class=" col-form-label-sm"
+            >District Total No. of Beneficiaries</label
+          >
+          <input class="form-control form-control-sm mar" />
+        </div>
+        <div class="form-group col-md-3">
+          <label class=" col-form-label-sm"
+            >District Total Amount Disbursed</label
+          >
+          <input class="form-control form-control-sm mar" />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.mainnav{
+    height: 40px;
+    box-shadow: 0px 10px 10px -15px #111;   
+    font-size: 15px;
+}
+.mainnav a{
+    padding: 8px 15px;
+}
+.mainnav a:hover{   
+    color: black;
+    border-bottom: 1px solid black;
+}
