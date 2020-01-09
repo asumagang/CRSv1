@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
-import { User, Role } from './_models';
+import { Component, OnInit } from '@angular/core';
+import { User, Role } from '../_models';
+import { AuthenticationService } from '../_services';
 import { Router } from '@angular/router';
-import { AuthenticationService } from './_services';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-head',
+  templateUrl: './head.component.html',
+  styleUrls: ['./head.component.css']
 })
-export class AppComponent {
-  title = 'CRSv1';
+export class HeadComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error("Method not implemented.");
+  }
 
   currentUser: User;
 
@@ -28,4 +30,5 @@ export class AppComponent {
       this.authenticationService.logout();
       this.router.navigate(['/login']);
   }
+
 }

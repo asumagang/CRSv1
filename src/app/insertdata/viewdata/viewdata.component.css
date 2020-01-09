@@ -1,0 +1,16 @@
+.bot{
+    border-top: solid #DEDEDE ;
+    margin-top: 300px;
+    width: 100%;
+}
+.mar{
+    margin-top: -8px;
+}
+.label-sm{
+    font-size: 12px;
+}
+.formdesign{
+    background-color:  #C0C0C0  ;
+    padding: 5px 5px;
+    border-radius: 5px;
+}

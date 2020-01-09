@@ -1,0 +1,29 @@
+.usersnav{
+    box-shadow: 0px 10px 10px -15px #111;   
+}
+.usersnav a{
+    font-size: 13px;
+    margin-left: 15px;
+}
+.active{
+    border-bottom: #0D9FF7 solid 2px;
+   
+}
+.reports-filter{
+    /* background-color: #A6A7A7; */
+    padding: 40px 20px;
+    border: solid 1px #A6A7A7;
+    border-radius: 10px;
+  }
+  .reportpanel{
+    background-color:  #CBCBCB;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: solid 1px #A6A7A7;
+    height:200px; 
+  }
+  .reportpanel p{
+    font-size: 12px;
+    text-align: center;
+  }
