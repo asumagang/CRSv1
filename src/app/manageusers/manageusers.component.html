@@ -1,0 +1,24 @@
+<!-- </div> -->
+<div class="container-fluid mt-2 ">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        [routerLink]="'activeusers'"
+        routerLinkActive="active"
+        >Active Users</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="'requests'"
+        routerLinkActive="active"
+        >User Requests</a
+      >
+    </li>
+  </ul>
+</div>
+<div class="container mt-3 ">
+  <router-outlet></router-outlet>
+</div>

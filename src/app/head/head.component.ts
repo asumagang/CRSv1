@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { User, Role } from '../_models';
-import { AuthenticationService } from '../_services';
+import { AuthenticationService, UserService } from '../_services';
 import { Router } from '@angular/router';
+import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'app-head',
@@ -9,15 +10,24 @@ import { Router } from '@angular/router';
   styleUrls: ['./head.component.css']
 })
 export class HeadComponent implements OnInit {
+  loading = false;
+  users: User[] = [];
   ngOnInit(): void {
     throw new Error("Method not implemented.");
+
+    this.loading = true;
+        this.userService.getAll().pipe(first()).subscribe(users => {
+            this.loading = false;
+            this.users = users;
+        });
   }
 
   currentUser: User;
 
   constructor(
       private router: Router,
-      private authenticationService: AuthenticationService
+      private authenticationService: AuthenticationService,
+      private userService: UserService
   ) {
       this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
   }

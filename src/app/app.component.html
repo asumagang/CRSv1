@@ -2,9 +2,11 @@
 <nav class="navbar navbar-expand  navbar-light bg-light mainnav" *ngIf="currentUser">
     <div class="navbar-nav">
         <a class="nav-item nav-link" routerLink="/">Dashboard</a>
+        <a class="nav-item nav-link" routerLink="/reports" *ngIf="isAdmin">Reports</a>
         <a class="nav-item nav-link" routerLink="/insertdata">Insert Data</a>
         <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Admin</a>
-        <a class="nav-item nav-link" routerLink="/reports" *ngIf="isAdmin">Reports</a>
+        <a class="nav-item nav-link" routerLink="/manageusers" *ngIf="isAdmin">Manage Users</a>
+
     </div>
 </nav>
 
