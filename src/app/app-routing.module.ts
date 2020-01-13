@@ -7,6 +7,7 @@ import { Role } from './_models';
 import { LoginComponent } from './login/login.component';
 import { ReportsComponent } from './reports/reports.component';
 import { InsertdataComponent } from './insertdata/insertdata.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 const routes: Routes = [
@@ -41,6 +42,10 @@ const routes: Routes = [
 {
     path: 'login',
     component: LoginComponent
+},
+{
+  path: 'signup',
+  component: SignupComponent
 },
 
 // otherwise redirect to home

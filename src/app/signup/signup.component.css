@@ -1,0 +1,23 @@
+#left{
+    background-image: url("/assets/logo.png");
+    background-color: aqua;
+}
+.loginbox{
+    margin-top: 100px;
+}
+#title {
+    font-size: 20px;
+    color: aqua;
+}
+#imagelogo{
+    height: 50px;
+}
+.mar{
+    margin-top: -8px;
+}
+.label-sm{
+    font-size: 15px;
+}
+.btn{
+    width: 100px;
+}
