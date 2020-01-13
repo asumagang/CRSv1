@@ -6,6 +6,7 @@ import { User } from '../_models';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
+  
     constructor(private http: HttpClient) { }
 
     getAll() {
@@ -14,5 +15,8 @@ export class UserService {
 
     getById(id: number) {
         return this.http.get<User>(`${environment.apiUrl}/users/${id}`);
+    }
+    register(user: User) {
+        return this.http.post(`/users/register`, user);
     }
 }

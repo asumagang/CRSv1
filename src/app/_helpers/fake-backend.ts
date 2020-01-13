@@ -39,7 +39,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             }
 
         }
-
+        
         // route functions
 
         function authenticate() {
@@ -70,9 +70,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             const user = users.find(x => x.id === idFromUrl());
             return ok(user);
         }
-
-        // helper functions
-
+        
         function ok(body) {
             return of(new HttpResponse({ status: 200, body }));
         }
