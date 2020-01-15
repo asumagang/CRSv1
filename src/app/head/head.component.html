@@ -47,9 +47,9 @@
                   aria-expanded="false"
                 >
                   <img
-                    src="/assets/pro.jpg"
+                  bind-src="currentUser.profilePic"
                     class="rounded-circle z-depth-0 logs"
-                    alt="avatar image"
+                    style="height: 28px;width:28px;"
                   />
                   {{currentUser.firstName}}
                 </a>

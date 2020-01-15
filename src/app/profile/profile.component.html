@@ -1,0 +1,57 @@
+<div class="container-fluid mt-3">
+  <div class="container">
+    <div class="container-fluid profilecard">
+      <!-- <div class="container-fluid title">
+          <h4>My Profile</h4>
+      </div> -->
+      <div class="row mt-4">
+        <div class="col-sm-3 col-md-6 col-lg-4 text-center">
+          <a href="#aboutModal" data-toggle="modal" data-target="#myModal"
+            ><img
+            bind-src="currentUser.profilePic"
+              width="150"
+              height="150"
+              class="img-circle"
+          /></a>
+
+          <h3 class="mt-2">
+            {{ currentUser.firstName }} {{ currentUser.lastName }}
+          </h3>
+          <em>{{ currentUser.role }}</em>
+        </div>
+        <div class="col-sm-9 col-md-6 col-lg-8 ">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+              Personal information
+            </a>
+            <a class="list-group-item list-group-item-action"
+              ><b>Name: </b>  <i>{{ currentUser.firstName }}
+                    {{ currentUser.lastName }}</i></a
+            >
+            <a
+              class="list-group-item list-group-item-action disabled"
+              tabindex="-1"
+              aria-disabled="true"
+              ><b><i class="fa fa-envelope" aria-hidden="true"></i> Email Address: </b>{{currentUser.emailAddress }}</a
+            >
+
+            <a class="list-group-item list-group-item-action"
+              ><b><i class="fa fa-map-marker" aria-hidden="true"></i> Address:</b>{{currentUser.address}}</a
+            >
+            <a class="list-group-item list-group-item-action"
+              ><b><i class="fa fa-mobile" aria-hidden="true"></i>
+                 Mobile number: </b> {{currentUser.mobileNo}}</a
+            >
+            <a class="list-group-item list-group-item-action"
+              ><b>Department:</b> {{currentUser.department}}</a
+            >
+            <a class="list-group-item list-group-item-action"
+              ><b>Username: </b> <i>{{currentUser.username}}</i></a
+            >
+          </div>
+          <button class="btn btn-dark mt-2 float-right">Edit Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

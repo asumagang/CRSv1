@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { ReportsComponent } from './reports/reports.component';
 import { InsertdataComponent } from './insertdata/insertdata.component';
 import { SignupComponent } from './signup/signup.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PasswordsettingsComponent } from './passwordsettings/passwordsettings.component';
 
 
 const routes: Routes = [
@@ -38,6 +40,16 @@ const routes: Routes = [
   component: ReportsComponent,
   canActivate: [AuthGuard],
   data: { roles: [Role.Admin] }
+},
+{
+  path:'profile',
+  component:ProfileComponent,
+  canActivate:[AuthGuard]
+},
+{
+  path:'passwordsettings',
+  component: PasswordsettingsComponent,
+  canActivate:[AuthGuard]
 },
 {
     path: 'login',
