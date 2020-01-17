@@ -1,5 +1,5 @@
 
-   <div class="container-flex ">
+   <div class="container-fluid ">
         <!-- Large modal -->
         <form>
           <div class="form-row">
@@ -165,14 +165,8 @@
               <td>{{ user.mobileno }}</td>
               <td>{{ user.department }}</td>
               <td>
-                <p data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  ...
-                </p>
-      
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Edit</a>
-                  <a class="dropdown-item text-danger" href="#">Delete</a>
-                </div>
+                  <button class="btn btn-primary btn-sm">Edit</button>
+                  <button class="btn btn-dark ml-2 btn-sm">Delete</button>
               </td>
             </tr>
           </tbody>

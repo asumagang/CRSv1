@@ -28,4 +28,14 @@ export class AppComponent {
       this.authenticationService.logout();
       this.router.navigate(['/login']);
   }
+
+  get isPDPO(){
+    return this.currentUser && this.currentUser.role === Role.PDPO;
+  }
+
+  get isBoth(){
+    return this.currentUser && this.currentUser.role === Role.PDPO || Role.Admin;
+   
+   
+  }
 }

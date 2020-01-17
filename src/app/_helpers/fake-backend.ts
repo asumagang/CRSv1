@@ -63,6 +63,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
         function getUsers() {
             if (!isAdmin()) return unauthorized();
+            if (!isPDPO()) return unauthorized();
             return ok(users);
         }
 
@@ -71,6 +72,9 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
             // only admins can access other user records
             if (!isAdmin() && currentUser().id !== idFromUrl()) return unauthorized();
+
+            if (!isPDPO() && currentUser().id !== idFromUrl()) return unauthorized();
+
 
             const user = users.find(x => x.id === idFromUrl());
             return ok(user);
@@ -95,6 +99,10 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
         function isAdmin() {
             return isLoggedIn() && currentUser().role === Role.Admin;
+        }
+
+        function isPDPO() {
+            return isLoggedIn() && currentUser().role === Role.PDPO;
         }
 
         function currentUser() {

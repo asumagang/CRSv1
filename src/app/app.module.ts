@@ -31,6 +31,7 @@ import { PasswordsettingsComponent } from './passwordsettings/passwordsettings.c
     SignupComponent,
     ProfileComponent,
     PasswordsettingsComponent,
+    
   ],
   imports: [
     BrowserModule,

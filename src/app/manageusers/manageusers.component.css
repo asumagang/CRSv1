@@ -1,0 +1,12 @@
+.active{
+    background-color: white;
+    /* color: #44F03F ; */
+    color: black;
+
+}
+li{
+    text-align: center;
+}
+.right{
+    border-left: solid 1px  #B1B1B1;
+}

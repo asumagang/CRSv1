@@ -39,7 +39,7 @@ const routes: Routes = [
   path: 'reports',
   component: ReportsComponent,
   canActivate: [AuthGuard],
-  data: { roles: [Role.Admin] }
+  data: { roles: [Role.Admin,Role.PDPO] }
 },
 {
   path:'profile',
