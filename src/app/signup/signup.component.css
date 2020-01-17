@@ -3,7 +3,7 @@
     background-color: aqua;
 }
 .loginbox{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 #title {
     font-size: 20px;
@@ -12,6 +12,12 @@
 #imagelogo{
     height: 50px;
 }
-.martop{
-    margin-top: 20px;
+.mar{
+    margin-top: -8px;
+}
+.label-sm{
+    font-size: 15px;
+}
+.btn{
+    width: 100px;
 }

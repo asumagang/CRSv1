@@ -6,6 +6,11 @@ export class User {
     password: string;
     firstName: string;
     lastName: string;
+    profilePic: string;
+    emailAddress:string;
+    department:string;
+    address:string;
+    mobileNo: string;
     role: Role;
     token?: string;
 }

@@ -1,0 +1,102 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-4 "></div>
+    <div class="col-sm-6 col-md-4 mt-5">
+      <div class="text-center mb-3">
+        <img
+          src="/assets/logo1.1.png"
+          class="text-center"
+          style="height: 120px;"
+        />
+        <h6 class=" text-center ">
+          Congressional Reporting System
+        </h6>
+      </div>
+
+      <div class="card">
+        <div
+          class="card-body mt-2"
+          style="box-shadow: 0px 13px 13px -12px #8B8B8B ;   "
+        >
+          <h2>Sign up</h2>
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-row ">
+              <div class="form-group col-md-6 ">
+                <label for="firstName" class="label-sm">First Name</label>
+                <input class="form-control form-control-sm mar" formControlName="firstName" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"/>
+                <div
+                  *ngIf="submitted && f.firstName.errors"
+                  class="invalid-feedback"
+                >
+                  <div *ngIf="f.firstName.errors.required">
+                    First Name is required
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lastName" class="label-sm">Last Name</label>
+                <input class="form-control form-control-sm mar" formControlName="lastName" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                        <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                    </div>
+              </div>
+            </div>
+
+            <div class="form-group mar">
+              <label for="address" class="label-sm">Address</label>
+              <input type="text" formControlName="address" class="form-control form-control-sm mar" [ngClass]="{ 'is-invalid': submitted && f.address.errors }"/>
+              <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+                    <div *ngIf="f.address.errors.required">Address is required</div>
+                </div>
+            </div>
+            <div class="form-row mar">
+              <div class="form-group col-md-6 ">
+                <label class="label-sm">Mobile number</label>
+                <input class="form-control form-control-sm mar" />
+              </div>
+              <div class="form-group col-md-6">
+                <label class="label-sm">Department</label>
+                <select class="form-control form-control-sm mar">
+                  <option>Department 1</option>
+                  <option>Department 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group mar">
+              <label class="label-sm mar">Email</label>
+              <input type="text" class="form-control form-control-sm mar" />
+            </div>
+            <div class="form-row mar">
+              <div class="form-group col-md-6 ">
+                <label for="username" class="label-sm">Username</label>
+                <input class="form-control form-control-sm mar" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }"/>
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                        <div *ngIf="f.username.errors.required">Username is required</div>
+                    </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="password" class="label-sm">Password</label>
+                <input class="form-control form-control-sm mar" type="password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"/>
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.errors.required">Password is required</div>
+                        <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                    </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <button [disabled]="loading" class="btn btn-primary float-right">
+                Sign up
+              </button>
+              <img
+                *ngIf="loading"
+                src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
+              />
+              <a [routerLink]="['/login']" class="btn btn-dark">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-4 "></div>
+  </div>
+</div>

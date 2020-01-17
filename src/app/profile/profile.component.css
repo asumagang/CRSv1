@@ -1,0 +1,16 @@
+img{
+    border-radius: 50%;
+    border: #DBDBDB solid;
+    
+}
+.profilecard{
+    border: solid 1px #DBDBDB;
+   padding: 8px 10px;
+   background-color: white;
+}
+.title h4{
+    color: #0F77F5 ;
+    border-bottom: 2px solid #44F03F ;
+    /* background-color: #5C5C5C ; */
+    width: 200px;
+}

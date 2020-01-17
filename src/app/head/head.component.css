@@ -19,6 +19,7 @@
     font-size: 13px;
     margin-right: 7px;
     background-color: white;
+    padding: 5px 8px;
     /* height: 15px; */
   }
   .collapse  a:hover {

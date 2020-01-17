@@ -15,6 +15,9 @@ import { HeadComponent } from './head/head.component';
 import { ReportsComponent } from './reports/reports.component';
 import { ChartsModule } from 'ng2-charts';
 import { FooterComponent } from './footer/footer.component';
+import { SignupComponent } from './signup/signup.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PasswordsettingsComponent } from './passwordsettings/passwordsettings.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,10 @@ import { FooterComponent } from './footer/footer.component';
     HeadComponent,
     ReportsComponent,
     FooterComponent,
+    SignupComponent,
+    ProfileComponent,
+    PasswordsettingsComponent,
+    
   ],
   imports: [
     BrowserModule,

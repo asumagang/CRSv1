@@ -1,17 +1,26 @@
 <app-head></app-head>
-<nav class="navbar navbar-expand  navbar-light bg-light mainnav" *ngIf="currentUser">
-    <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Dashboard</a>
-        <a class="nav-item nav-link" routerLink="/reports" *ngIf="isAdmin">Reports</a>
-        <a class="nav-item nav-link" routerLink="/insertdata">Insert Data</a>
-        <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Admin</a>
-        <a class="nav-item nav-link" routerLink="/manageusers" *ngIf="isAdmin">Manage Users</a>
-
-    </div>
+<nav class="navbar navbar-expand   mainnav" *ngIf="currentUser">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" routerLink="/"  routerLinkActive="active"><i class="fa fa-home" aria-hidden="true"></i>
+        Dashboard</a>
+    <a class="nav-item nav-link" routerLink="/reports"  routerLinkActive="active" *ngIf="isAdmin" 
+      ><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+      Reports</a
+    >
+    <a class="nav-item nav-link" routerLink="/reports"  routerLinkActive="active" *ngIf="isPDPO" 
+    ><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+    Reports</a
+  >
+    <a class="nav-item nav-link" routerLink="/insertdata"  routerLinkActive="active"><i class="fa fa-table" aria-hidden="true"></i>
+        Insert Data</a>
+    <a class="nav-item nav-link" routerLink="/manageusers"  routerLinkActive="active" *ngIf="isAdmin"
+      ><i class="fa fa-users"></i> Manage Users</a
+    >
+  </div>
 </nav>
 
 <!-- main app container -->
 <div class="container-flex">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
 <app-footer></app-footer>
