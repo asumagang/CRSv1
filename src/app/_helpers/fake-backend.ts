@@ -7,8 +7,8 @@ import { User, Role } from '../_models';
 
 const users: User[] = [
     { id: 1, username: 'kcarabuena', password: 'user', firstName: 'Karen', lastName: 'Carabuena',profilePic: 'https://comicvine1.cbsistatic.com/uploads/square_medium/3/32248/627083-mulan_by_ladykitana.png',emailAddress:'kcarabuena@gmail.com',department:'Department 1',address:'Daan Bantayan, Cebu',mobileNo:'09551632415',role: Role.User },
-    { id: 2, username: 'asumagang', password: 'admin', firstName: 'Adrian', lastName: 'Sumagang',profilePic:'https://66.media.tumblr.com/15b82816ecff225d50f899f9417c98b0/aab521d1bd5f501e-5f/s640x960/391dbb4654b3ccf48f6aadebb248500fc94f9811.jpg',emailAddress:'asumagang@gmail.com',department:'Department 1',address:'Talamban, Cebu City',mobileNo:'09551632415', role: Role.Admin },
-    { id: 3, username: 'imraboy', password: 'pdpo', firstName: 'Ibha', lastName: 'Raboy',profilePic:'https://pbs.twimg.com/media/EDzh7kZUcAAkwFc.jpg' ,emailAddress:'kcarabuena@gmail.com',department:'Department 1',address:'Daan Bantayan, Cebu',mobileNo:'09551632415',role: Role.PDPO},
+    { id: 2, username: 'asumagang', password: 'admin', firstName: 'Adrian', lastName: 'Sumagang',profilePic:'https://pbs.twimg.com/media/EDzh7kZUcAAkwFc.jpg',emailAddress:'asumagang@gmail.com',department:'Department 1',address:'Talamban, Cebu City',mobileNo:'09551632415', role: Role.Admin },
+    { id: 3, username: 'imraboy', password: 'pdpo', firstName: 'Ibha', lastName: 'Raboy',profilePic:'https://66.media.tumblr.com/15b82816ecff225d50f899f9417c98b0/aab521d1bd5f501e-5f/s640x960/391dbb4654b3ccf48f6aadebb248500fc94f9811.jpg' ,emailAddress:'kcarabuena@gmail.com',department:'Department 1',address:'Daan Bantayan, Cebu',mobileNo:'09551632415',role: Role.PDPO},
 
 
 ];

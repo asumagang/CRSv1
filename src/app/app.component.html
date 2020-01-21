@@ -1,26 +1,27 @@
-<app-head></app-head>
-<nav class="navbar navbar-expand   mainnav" *ngIf="currentUser">
-  <div class="navbar-nav">
-    <a class="nav-item nav-link" routerLink="/"  routerLinkActive="active"><i class="fa fa-home" aria-hidden="true"></i>
-        Dashboard</a>
-    <a class="nav-item nav-link" routerLink="/reports"  routerLinkActive="active" *ngIf="isAdmin" 
-      ><i class="fa fa-newspaper-o" aria-hidden="true"></i>
-      Reports</a
-    >
-    <a class="nav-item nav-link" routerLink="/reports"  routerLinkActive="active" *ngIf="isPDPO" 
-    ><i class="fa fa-newspaper-o" aria-hidden="true"></i>
-    Reports</a
-  >
-    <a class="nav-item nav-link" routerLink="/insertdata"  routerLinkActive="active"><i class="fa fa-table" aria-hidden="true"></i>
-        Insert Data</a>
-    <a class="nav-item nav-link" routerLink="/manageusers"  routerLinkActive="active" *ngIf="isAdmin"
-      ><i class="fa fa-users"></i> Manage Users</a
-    >
-  </div>
-</nav>
 
-<!-- main app container -->
-<div class="container-flex">
-  <router-outlet></router-outlet>
-</div>
-<app-footer></app-footer>
+<app-head></app-head>
+<div class="container-fluid" >
+    <div class="row">
+      <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-dark1 " *ngIf="currentUser">
+        <ul class="list-group mt-5 text-left ">
+            <li class="list-group-item border-0" routerLink="/dashboard"  routerLinkActive="active" ><i class="fa fa-home" aria-hidden="true"></i> Dashboard</li>
+            <li class="list-group-item border-0" routerLink="/reports" *ngIf="isAdmin" routerLinkActive="active"><i class="fa fa-file-text" aria-hidden="true"></i>
+              Reports</li>
+            <li class="list-group-item border-0" routerLink="/reports" *ngIf="isPDPO" routerLinkActive="active"><i class="fa fa-file-text" aria-hidden="true"></i> Reports</li>
+            <li class="list-group-item border-0" routerLink="/insertdata" routerLinkActive="active"><i class="fa fa-table" aria-hidden="true"></i> Insert Data</li>
+            <li class="list-group-item border-0" routerLink="/manageusers" *ngIf="isAdmin" routerLinkActive="active"><i class="fa fa-users" aria-hidden="true"></i> Manage Users</li>
+            <li class="list-group-item border-0" routerLink="/scanner" routerLinkActive="active"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Scanner</li>
+            <li class="list-group-item border-0"><i class="fa fa-heart" aria-hidden="true"></i> Programs</li>
+        </ul>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 ">
+        <div class="container-flex ">
+          <div class="container-fluid right mt-3">
+              <router-outlet></router-outlet>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer> 

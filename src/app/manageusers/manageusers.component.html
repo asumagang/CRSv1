@@ -1,20 +1,46 @@
+<!-- </div> -->
+<!-- <div class="container-fluid mt-2 ">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          [routerLink]="'activeusers'"
+          routerLinkActive="active"
+          >Active Users</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="'requests'"
+          routerLinkActive="active"
+          >User Requests</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="container mt-3 right">
+    <router-outlet></router-outlet>
+  </div>
+   -->
 
-
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 left">
-        <ul class="list-group  mt-5">
-          <li class="list-group-item"   [routerLink]="'activeusers'"
-          routerLinkActive="active">Active Users</li>
-          <li class="list-group-item" [routerLink]="'requests'"
-          routerLinkActive="active">User Requests</li>
+   <nav class="navbar navbar-expand-lg  usersnav">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'activeusers'" routerLinkActive="active"
+              >Active Users</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'requests'" routerLinkActive="active"
+              >Users Requests</a
+            >
+          </li>
         </ul>
       </div>
-      <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 mt-4">
-        <div class="container-fluid right">
-            <router-outlet></router-outlet>
-        </div>
-        
-      </div>
+    </nav>
+    <div class="container-fluid mt-3">
+        <router-outlet></router-outlet>
     </div>
-  </div>
+    

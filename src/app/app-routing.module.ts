@@ -14,7 +14,7 @@ import { PasswordsettingsComponent } from './passwordsettings/passwordsettings.c
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'dashboard',
     component: HomeComponent,
     canActivate: [AuthGuard]
 },
@@ -61,7 +61,7 @@ const routes: Routes = [
 },
 
 // otherwise redirect to home
-{ path: '**', redirectTo: '' }
+{ path: '**', redirectTo: 'dashboard' }
 ];
 
 @NgModule({

@@ -1,12 +1,16 @@
-.active{
-    background-color: white;
-    /* color: #44F03F ; */
-    color: black;
+.usersnav{
+    box-shadow: 0px 10px 10px -15px #111; 
+    border-bottom-right-radius: 15px;  
+    border-bottom-left-radius: 15px;  
+    background-color: #CFECFE  ;
 
 }
-li{
-    text-align: center;
+.usersnav a{
+    font-size: 13px;
+    margin-left: 15px;
+    /* border-right: #46E613 1px solid; */
 }
-.right{
-    border-left: solid 1px  #B1B1B1;
+.active{
+    border-bottom:#46E613 solid 2px;
+   
 }
