@@ -10,6 +10,7 @@ import { InsertdataComponent } from './insertdata/insertdata.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PasswordsettingsComponent } from './passwordsettings/passwordsettings.component';
+import { ProgramsComponent } from './programs/programs.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,12 @@ const routes: Routes = [
   component: ReportsComponent,
   canActivate: [AuthGuard],
   data: { roles: [Role.Admin,Role.PDPO] }
+},
+{
+  path:'programs',
+  component: ProgramsComponent,
+  canActivate:[AuthGuard],
+  data:{roles:[Role.Admin,Role.PDPO]}
 },
 {
   path:'profile',

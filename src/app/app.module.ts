@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PasswordsettingsComponent } from './passwordsettings/passwordsettings.component';
+import { ProgramsComponent } from './programs/programs.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PasswordsettingsComponent } from './passwordsettings/passwordsettings.c
     SignupComponent,
     ProfileComponent,
     PasswordsettingsComponent,
+    ProgramsComponent,
     
   ],
   imports: [

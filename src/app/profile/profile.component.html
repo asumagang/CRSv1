@@ -1,9 +1,10 @@
 <div class="container-fluid mt-3">
   <div class="container">
     <div class="container-fluid profilecard">
-      <!-- <div class="container-fluid title">
+      <div class="container-fluid title">
           <h4>My Profile</h4>
-      </div> -->
+          <hr>
+      </div>
       <div class="row mt-4">
         <div class="col-sm-3 col-md-6 col-lg-4 text-center">
           <a href="#aboutModal" data-toggle="modal" data-target="#myModal"
@@ -13,39 +14,66 @@
               height="150"
               class="img-circle"
           /></a>
-
+          <br>
+          <button class="avatarbtn" data-toggle="modal" data-target="#exampleModalCenter">Change Avatar</button>
           <h3 class="mt-2">
             {{ currentUser.firstName }} {{ currentUser.lastName }}
           </h3>
           <em>{{ currentUser.role }}</em>
+          <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Upload Image</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                    aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Save </button>
+        </div>
+      </div>
+    </div>
+  </div>
         </div>
         <div class="col-sm-9 col-md-6 col-lg-8 ">
           <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action active">
-              Personal information
-            </a>
-            <a class="list-group-item list-group-item-action"
+            <a class="list-group-item list-group-item-action border-0"
               ><b>Name: </b>  <i>{{ currentUser.firstName }}
                     {{ currentUser.lastName }}</i></a
             >
             <a
-              class="list-group-item list-group-item-action disabled"
+              class="list-group-item list-group-item-action border-0 disabled"
               tabindex="-1"
               aria-disabled="true"
               ><b><i class="fa fa-envelope" aria-hidden="true"></i> Email Address: </b>{{currentUser.emailAddress }}</a
             >
 
-            <a class="list-group-item list-group-item-action"
+            <a class="list-group-item list-group-item-action border-0"
               ><b><i class="fa fa-map-marker" aria-hidden="true"></i> Address:</b>{{currentUser.address}}</a
             >
-            <a class="list-group-item list-group-item-action"
+            <a class="list-group-item list-group-item-action border-0"
               ><b><i class="fa fa-mobile" aria-hidden="true"></i>
                  Mobile number: </b> {{currentUser.mobileNo}}</a
             >
-            <a class="list-group-item list-group-item-action"
+            <a class="list-group-item list-group-item-action border-0"
               ><b>Department:</b> {{currentUser.department}}</a
             >
-            <a class="list-group-item list-group-item-action"
+            <a class="list-group-item list-group-item-action border-0"
               ><b>Username: </b> <i>{{currentUser.username}}</i></a
             >
           </div>
