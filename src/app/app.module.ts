@@ -19,6 +19,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PasswordsettingsComponent } from './passwordsettings/passwordsettings.component';
 import { ProgramsComponent } from './programs/programs.component';
+import { ScannerComponent } from './scanner/scanner.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ProgramsComponent } from './programs/programs.component';
     ProfileComponent,
     PasswordsettingsComponent,
     ProgramsComponent,
+    ScannerComponent,
     
   ],
   imports: [

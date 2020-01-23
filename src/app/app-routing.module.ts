@@ -11,6 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PasswordsettingsComponent } from './passwordsettings/passwordsettings.component';
 import { ProgramsComponent } from './programs/programs.component';
+import { ScannerComponent } from './scanner/scanner.component';
 
 
 const routes: Routes = [
@@ -56,6 +57,11 @@ const routes: Routes = [
 {
   path:'passwordsettings',
   component: PasswordsettingsComponent,
+  canActivate:[AuthGuard]
+},
+{
+  path:'scanner',
+  component:ScannerComponent,
   canActivate:[AuthGuard]
 },
 {
