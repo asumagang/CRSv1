@@ -1,10 +1,10 @@
 .footer{
     max-height: 20px;
-    background-color: #AFAEAE ;
+    background-color: #545454 ;
 }
 .footer p{
     text-align: center;
     font-size: 10px;
-    color: #343333 ;
-    margin-bottom: 15px;
+    color: #ECECEC ;
+    margin-bottom: 25px;
 }
